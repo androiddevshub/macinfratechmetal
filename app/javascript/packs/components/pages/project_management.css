@@ -1,0 +1,55 @@
+.pm-main {
+  margin: 100px;
+}
+.pm-title {
+  font-weight: bolder;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: rgb(78, 78, 221);
+}
+
+.pm-content {
+  font-weight: 500;
+  font-size: 1.5em;
+  border: 1px bold #000000;
+  margin-bottom: 30px;
+}
+
+.horz-line-about {
+  width: auto;
+  height: 2px;
+  background-color: rgb(196, 195, 195);
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+  font-weight: bolder;
+}
+
+.pm-list-main {
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.pm-list-card {
+  margin: 1.5vw;
+  display: inline-block;
+  width: 45%;
+  transition: 0.3s;
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
+}
+
+.pm-card-title {
+  font-weight: 600;
+  font-size: 1.4em;
+  color: rgb(78, 78, 221);
+}
+
+.pm-card-content {
+  margin-top: 20px;
+}
+
+@media screen {
+}

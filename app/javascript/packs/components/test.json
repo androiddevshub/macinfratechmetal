@@ -1,0 +1,54 @@
+
+
+data : [{
+  id: 1,
+  title: "Steel fabrication, erection & casing work"
+},
+{
+  id: 2,
+  title: "Chimney fabrication & erection"
+},
+{
+  id: 3,
+  title: "Refiner, feeders"
+},
+{
+  id: 4,
+  title: "Furnace, Throat, Regenerator binding"
+},
+{
+  id: 5,
+  title: "Dismantling of furnace"
+},
+{
+  id: 6,
+  title: "Reversal damper fabrication & fitting"
+},
+{
+  id: 7,
+  title: "Duct and cooling of furnace, throat, secondary & mould"
+},
+{
+  id: 8,
+  title: "Automatic batch house"
+},
+{
+  id: 9,
+  title: "Silos, Conveyor, Bucket elevator"
+},{
+  id: 10,
+  title: "Weighing hopper, Vibro feeder and Screw feeder"
+},
+{
+  id: 11,
+  title: "Instrumentation & Electrical equipments"
+},{
+  id: 12,
+  title: "Catwalk, Grating & Staircases"
+},{
+  id: 13,
+  title: "Material handling & weighing"
+},{
+  id: 14,
+  title: "Project layout & product design"
+}]

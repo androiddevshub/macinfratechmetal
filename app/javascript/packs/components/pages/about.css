@@ -1,0 +1,28 @@
+.about-main {
+  margin: 100px;
+}
+.our-history-title {
+  font-weight: bolder;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: rgb(78, 78, 221);
+}
+
+.our-history-content {
+  font-weight: 500;
+  font-size: 1.5em;
+  border: 1px bold #000000;
+  margin-bottom: 30px;
+}
+
+.horz-line-about {
+  width: auto;
+  height: 2px;
+  background-color: rgb(196, 195, 195);
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+  font-weight: bolder;
+}
