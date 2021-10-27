@@ -3,9 +3,10 @@ import "./project_management.css";
 import Accordion from "react-bootstrap/Accordion";
 import { Card, Button, ListGroup } from "react-bootstrap";
 import ShowImage from "./../../assets/images/slider.png";
+import CardImage from "./../../assets/images/gallery/IMG_20171212_122244.jpg";
 export default function ProjectManagement() {
   return (
-    <div className="about-main">
+    <div className="pm-main">
       <div className="pm-title">How Our Project Management Works?</div>
       <div className="pm-content">
         MAC Infratech Metal Private Limited undertakes a wide variety of
@@ -23,7 +24,7 @@ export default function ProjectManagement() {
       <div className="pm-list-main">
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={ShowImage} />
+            <Card.Img variant="top" src={CardImage} />
             <Card.Body>
               <Card.Title className="pm-card-title">Engineering</Card.Title>
               <Card.Text>
@@ -54,96 +55,90 @@ export default function ProjectManagement() {
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={ShowImage} />
+            <Card.Img variant="top" src={CardImage} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title className="pm-card-title">Procurement</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div className="pm-card-content">
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      <span>Purchasing</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Manufacturing</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Shipping / Delivery</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Design / Drawing Approval</span>
+                    </ListGroup.Item>
+                  </ListGroup>
+                </div>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={ShowImage} />
+            <Card.Img variant="top" src={CardImage} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title className="pm-card-title">
+                Site Mobilization
+              </Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div className="pm-card-content">
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      <span>Site Setup</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Preparation for receipt of all equipment</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>
+                        Mechanical, Electrical & Control Panel Installation
+                      </span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Dry Run & Material Testing</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Operator & Maintenance Training</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>Installation & Operation Qualification</span>
+                    </ListGroup.Item>
+                  </ListGroup>
+                </div>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={ShowImage} />
+            <Card.Img variant="top" src={CardImage} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title className="pm-card-title">Commissioning</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div className="pm-card-content">
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>
+                      <span>Performance Qualification and Testing</span>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                      <span>
+                        Provide as-built documentation, manuals and spares
+                        lists.
+                      </span>
+                    </ListGroup.Item>
+                  </ListGroup>
+                </div>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
       </div>
-
-      {/* <Accordion defaultActiveKey="0" flush>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            <div className="pm-list-title">Engineering</div>
-          </Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Procurement</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>Accordion Item #3</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="3">
-          <Accordion.Header>Accordion Item #4</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
- */}
     </div>
   );
 }

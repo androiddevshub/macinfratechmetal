@@ -1,115 +1,64 @@
 import * as React from "react";
 import "./footer.css";
 import MacLogo from "./../assets/images/mac_logo.png";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export default function Footer() {
   return (
-    <footer className="main-footer">
-      <div className="container">
-        <div className="widgets-section">
-          <div className="row clearfix">
-            <div className="big-column col-lg-6 col-md-12 col-sm-12">
-              <div className="row clearfix">
-                <div className="footer-column col-lg-7 col-md-6 col-sm-12">
-                  <div className="footer-widget about-widget">
-                    <div className="logo">
-                      <a href="#">
-                        <img width={100} src={MacLogo} alt="" />
-                      </a>
-                    </div>
-                    <div style={{ width: 250 }} className="text">
-                      <p>
-                        Lorem ipsum dolor amet consectetur adipisicing elit sed
-                        eiusm tempor incididunt ut labore dolore magna aliqua
-                        enim ad minim veniam.
-                      </p>
-                      <p>
-                        Quis nostrud exercitation ullam aboris nisi aliquip exea
-                        commodo consequat duis aute irure.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                  <div className="footer-widget links-widget">
-                    <h2>Quick Links</h2>
-                    <ul className="footer-list">
-                      <li>
-                        <a href="#">Company History</a>
-                      </li>
-                      <li>
-                        <a href="#">About Us</a>
-                      </li>
-                      <li>
-                        <a href="#">Contact Us</a>
-                      </li>
-                      <li>
-                        <a href="#">Services</a>
-                      </li>
-                      <li>
-                        <a href="#">Privacy Policy</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="big-column col-lg-6 col-md-12 col-sm-12">
-              <div className="row clearfix">
-                <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget info-widget">
-                    <h2>Contact Info</h2>
-                    <ul className="info-list">
-                      <li>
-                        Flat 20, Reynolds Neck, North Hele naville, FV77 8WS
-                      </li>
-                      <li>+2(305) 587-3407</li>
-                      <li>info@morris.com</li>
-                    </ul>
-
-                    <ul className="social-links">
-                      <li className="google">
-                        <a href="#">
-                          <span className="fab fa-google-plus-g"></span>
-                        </a>
-                      </li>
-                      <li className="facebook">
-                        <a href="#">
-                          <span className="fab fa-facebook-f"></span>
-                        </a>
-                      </li>
-                      <li className="instagram">
-                        <a href="#">
-                          <span className="fab fa-instagram"></span>
-                        </a>
-                      </li>
-                      <li className="twitter">
-                        <a href="#">
-                          <span className="fab fa-twitter"></span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
+    <div className="footer-main">
+      <section className="contact-area" id="contact">
         <div className="container">
-          <div className="row clearfix">
-            <div className="column col-lg-6 col-md-12 col-sm-12">
-              <div className="copyright">
-                <span className="theme_color">Designed By</span> Shubham Jain
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3">
+              <div className="contact-content text-center">
+                <a href="#">
+                  <img width="100" src={MacLogo} alt="logo" />
+                </a>
+                <p>
+                  We are leading suppliers of Glass Industry Batching systems,
+                  Chimney Fabrication, Reversal damper, furnace binding and
+                  refractory lining etc.
+                </p>
+                <div className="hr"></div>
+                <h6>296B GURUNANAK FARM (BARI), P.O. BARA,</h6>
+                <h6>SITARGANJ, DISTT - U.S. NAGAR, UTTARAKHAND (263148)</h6>
+                <h6>
+                  +91-70179-30116<span>|</span>+91-98371-03646
+                </h6>
+                <div className="contact-social">
+                  <ul>
+                    <li>
+                      <a className="hover-target" href="">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover-target" href="">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover-target" href="">
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover-target" href="">
+                        <i className="fab fa-behance"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="hover-target" href="">
+                        <i className="fab fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+    </div>
   );
 }

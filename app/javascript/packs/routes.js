@@ -5,6 +5,7 @@ import WhyUs from "./components/pages/WhyUs";
 import ProjectManagement from "./components/pages/ProjectManagement";
 import Clients from "./components/pages/Clients";
 import Contact from "./components/pages/Contact";
+import Gallery from "./components/pages/Gallery";
 import Home from "./components/Home";
 function Routes() {
   return (
@@ -20,6 +21,9 @@ function Routes() {
       </Route>
       <Route path="/clients">
         <Clients />
+      </Route>
+      <Route path="/gallery">
+        <Gallery />
       </Route>
       <Route path="/contact">
         <Contact />

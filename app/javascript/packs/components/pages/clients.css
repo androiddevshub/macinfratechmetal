@@ -1,0 +1,21 @@
+.clients-main {
+  margin: 100px;
+}
+.clients-title {
+  font-weight: bolder;
+  font-size: 2em;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: rgb(78, 78, 221);
+}
+
+.clients-content {
+  font-weight: 500;
+  font-size: 1.5em;
+  border: 1px bold #000000;
+  margin-bottom: 30px;
+}
+
+.clients-table {
+  margin: 100px;
+}

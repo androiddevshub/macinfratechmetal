@@ -3,7 +3,7 @@
 }
 .slider {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-color: aliceblue;
 }
 
@@ -51,8 +51,9 @@
 .pts-card {
   margin: 30px;
   width: 22rem;
-  height: 250px;
-  border: 5px solid transparent;
+  height: fit-content;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
 }
 
 .pts-card-title {

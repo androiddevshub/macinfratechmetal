@@ -28,6 +28,9 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/clients">
               <Button variant="outlined">Clients</Button>
             </Nav.Link>
+            <Nav.Link as={Link} to="/gallery">
+              <Button variant="outlined">Gallery</Button>
+            </Nav.Link>
             <Nav.Link as={Link} to="/contact">
               <Button variant="outlined">Contact Us</Button>
             </Nav.Link>
