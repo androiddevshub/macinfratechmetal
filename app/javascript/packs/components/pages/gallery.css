@@ -2,3 +2,7 @@
   margin: 100px;
   box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
 }
+
+.ReactGridGallery_tile-viewport img {
+  width: 300px;
+}

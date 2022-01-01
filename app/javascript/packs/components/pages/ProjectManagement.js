@@ -3,7 +3,11 @@ import "./project_management.css";
 import Accordion from "react-bootstrap/Accordion";
 import { Card, Button, ListGroup } from "react-bootstrap";
 import ShowImage from "./../../assets/images/slider.png";
-import CardImage from "./../../assets/images/gallery/IMG_20171212_122244.jpg";
+import PM_Engineering from "./../../assets/images/engineering_team.png";
+import PM_Site_mobilization from "./../../assets/images/gallery/IMG_20171224_144836.jpg";
+import PM_Procurement from "./../../assets/images/gallery/IMG_20171212_125545.jpg";
+import PM_Commisioning from "./../../assets/images/gallery/IMG_20171221_153846.png";
+
 export default function ProjectManagement() {
   return (
     <div className="pm-main">
@@ -13,6 +17,16 @@ export default function ProjectManagement() {
         projects, big and small, and understands that each one is different, but
         all require the same attention to detail.
       </div>
+
+      <div className="pm-content">
+        We have a strong manpower base to execute all types of Glass Furnaces &
+        batch house construction and is able to take up multiple projects
+        simultaneously in different locations. We have competent supervisory
+        staff, skilled workmen who have 15 – 20 years of experience in the field
+        of Glass Furnace & batch house construction. We have complete set of
+        tools to boost up the fabrication and erection work.
+      </div>
+
       <div className="pm-content">
         Each project has a Project Engineer appointed to manage it and as the
         primary customer contact from commencement through to final completion.
@@ -24,7 +38,11 @@ export default function ProjectManagement() {
       <div className="pm-list-main">
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={CardImage} />
+            <Card.Img
+              className="pm-card-image"
+              variant="top"
+              src={PM_Engineering}
+            />
             <Card.Body>
               <Card.Title className="pm-card-title">Engineering</Card.Title>
               <Card.Text>
@@ -55,7 +73,11 @@ export default function ProjectManagement() {
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={CardImage} />
+            <Card.Img
+              className="pm-card-image"
+              variant="top"
+              src={PM_Site_mobilization}
+            />
             <Card.Body>
               <Card.Title className="pm-card-title">Procurement</Card.Title>
               <Card.Text>
@@ -81,7 +103,11 @@ export default function ProjectManagement() {
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={CardImage} />
+            <Card.Img
+              className="pm-card-image"
+              variant="top"
+              src={PM_Procurement}
+            />
             <Card.Body>
               <Card.Title className="pm-card-title">
                 Site Mobilization
@@ -117,7 +143,11 @@ export default function ProjectManagement() {
         </div>
         <div className="pm-list-card">
           <Card>
-            <Card.Img variant="top" src={CardImage} />
+            <Card.Img
+              className="pm-card-image"
+              variant="top"
+              src={PM_Commisioning}
+            />
             <Card.Body>
               <Card.Title className="pm-card-title">Commissioning</Card.Title>
               <Card.Text>

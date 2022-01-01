@@ -79,34 +79,43 @@ export class Contact extends React.Component {
               <Button variant="primary">Submit</Button>
             </Form>
           </div>
-          <div className="contact-icons">
+          <div className="contact-details">
             <div className="address-info-div">
               <Card className="text-center">
                 <div style={{ alignItems: "center" }}>
                   <img
-                    src={addressIcon}
+                    src="https://img.icons8.com/color/48/000000/link-company-parent.png"
                     style={{
-                      width: "80px",
+                      width: "50px",
                       marginTop: "20px",
                       alignContent: "center",
                     }}
                   ></img>
 
                   <Card.Body>
-                    <Card.Title>Address</Card.Title>
                     <Card.Title
                       style={{
                         marginTop: "20px",
-                        fontSize: "22px",
+                        fontSize: "15px",
                       }}
                     >
                       296B GURUNANAK FARM (BARI), P.O. BARA,
                       <br />
                       <br />
-                      SITARGANJ, DISTT - U.S. NAGAR
+                      SITARGANJ, DISTT - U.S. NAGAR, UTTARAKHAND (263148)
+                    </Card.Title>
+                  </Card.Body>
+                  <Card.Body>
+                    <Card.Title
+                      style={{
+                        marginTop: "20px",
+                        fontSize: "15px",
+                      }}
+                    >
+                      GF-10 ORCHID BLUE, NEAR BODH ASHRAM,
                       <br />
                       <br />
-                      UTTARAKHAND (263148)
+                      FIROZABAD, UTTAR PRADESH (283203)
                     </Card.Title>
                   </Card.Body>
                 </div>

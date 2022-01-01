@@ -17,5 +17,16 @@
 }
 
 .clients-table {
-  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.BaseTable__header-cell-text {
+  font-size: 1.4em;
+}
+
+.BaseTable__row-cell-text {
+  font-size: 1.3em;
 }

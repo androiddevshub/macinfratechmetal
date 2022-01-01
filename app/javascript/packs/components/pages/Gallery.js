@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 import Gallery1 from "react-grid-gallery";
+import PhotoGallery from "react-photo-gallery";
+
 import "./gallery.css";
 
 export default class Gallery extends React.Component {
@@ -39,6 +41,14 @@ export default class Gallery extends React.Component {
       });
     });
 
+    // images.map((image) => {
+    //   newImages.push({
+    //     src: image,
+    //     width: random(30, 35),
+    //     height: random(25, 30),
+    //   });
+    // });
+
     return (
       <div
         style={{
@@ -51,10 +61,12 @@ export default class Gallery extends React.Component {
         }}
       >
         <div className="gallery-main">
+          {/* <PhotoGallery photos={newImages} margin={20} /> */}
           <Gallery1
             images={newImages}
             enableLightbox={true}
             enableImageSelection={false}
+            margin={20}
           />
         </div>
       </div>

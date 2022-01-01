@@ -119,59 +119,50 @@ export default function WhyUs() {
             <ListGroup variant="flush">
               <div className="facilities-item">
                 <ListGroup.Item>
-                  ➢ In house designing facility (Auto Cadd).
+                  ➢ In house designing facility (Auto Cadd & Solidworks).
                 </ListGroup.Item>
+              </div>
+              <div className="facilities-item">
+                <ListGroup.Item>➢ Strong Manpower Base.</ListGroup.Item>
               </div>
               <div className="facilities-item">
                 <ListGroup.Item>
-                  ➢ Over 55 well trained employees.
+                  ➢ Mobile cranes with lifting capacity of 14 tonnes.
                 </ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>
-                  ➢ 1 mobile crane with lifting capacity of 14 tonnes.
-                </ListGroup.Item>
+                <ListGroup.Item>➢ Arc welding sets.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>➢ 12 arc welding sets.</ListGroup.Item>
+                <ListGroup.Item>➢ Gas cutting sets.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>➢ 08 gas cutting sets.</ListGroup.Item>
+                <ListGroup.Item>➢ Plasma cutting set.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>➢ 01 plasma cutting set.</ListGroup.Item>
+                <ListGroup.Item>➢ Site Safety Equipments.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>➢ 05 no's of safety belts.</ListGroup.Item>
+                <ListGroup.Item>➢ Welding, cutting Accessories.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>
-                  ➢ 15 no's of welding helmets/screens.
-                </ListGroup.Item>
+                <ListGroup.Item>➢ Grinders.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>
-                  ➢ 03 no's of angle grinders (7’’).
-                </ListGroup.Item>
+                <ListGroup.Item>➢ Several sets of tools.</ListGroup.Item>
               </div>
               <div className="facilities-item">
-                <ListGroup.Item>
-                  ➢ 02 no's of angle grinders (4’’).
-                </ListGroup.Item>
-              </div>
-              <div className="facilities-item">
-                <ListGroup.Item>➢ 06 no's. of right angles.</ListGroup.Item>
-              </div>
-              <div className="facilities-item">
-                <ListGroup.Item>➢ Several sets of spanners.</ListGroup.Item>
-              </div>
-              <div className="facilities-item">
-                <ListGroup.Item>➢ Spray paint machine.</ListGroup.Item>
+                <ListGroup.Item>➢ Spray paint.</ListGroup.Item>
               </div>
             </ListGroup>
           </div>
         </Card>
       </div>
+      <div className="wework-title">Design On Which We Worked</div>
+      <p>◉ Glacera engineers (Mr. Prem P Malhotra)</p>
+      <p>◉ A.K. glass consultant (Mr. A.K. Sinha)</p>
+      <p>◉ C.V. Chalam consultants’ Pvt Ltd. (Mr. C.V. Chalam)</p>
+      <p>◉ Thermproject glass service. (Mr. Bhupen Parmar)</p>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function NavBar() {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img className="logo" src={MacLogo} />
-          <span className="logo-text">MAC InfraTech Metal Private Ltd.</span>
+          <span className="logo-text">MAC InfraTech Metal</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -20,7 +20,7 @@ export default function NavBar() {
               <Button variant="outlined">About us</Button>
             </Nav.Link>
             <Nav.Link as={Link} to="/project_management">
-              <Button variant="outlined">Project Management</Button>
+              <Button variant="outlined">Project Mgmt</Button>
             </Nav.Link>
             <Nav.Link as={Link} to="/why_us">
               <Button variant="outlined">Why Us</Button>
@@ -34,6 +34,13 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/contact">
               <Button variant="outlined">Contact Us</Button>
             </Nav.Link>
+            <div className="header-email">
+              <img
+                width={18}
+                src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-email-seo-dreamstale-lineal-dreamstale.png"
+              />
+              <span className="email-text">info@macinfratechmetal.com</span>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

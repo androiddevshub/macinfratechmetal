@@ -51,5 +51,9 @@
   margin-top: 20px;
 }
 
+.pm-card-image {
+  height: 65vh;
+}
+
 @media screen {
 }

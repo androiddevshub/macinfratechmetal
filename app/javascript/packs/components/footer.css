@@ -37,16 +37,13 @@ ul {
   color: #8b9199;
   font-size: 15px;
   font-weight: 400;
+  margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.contact-content span {
-  color: #353c47;
-  margin: 0 10px;
 }
 
 .contact-social {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contact-social > ul {
@@ -54,12 +51,11 @@ ul {
 }
 
 .contact-social ul li a {
-  border: 1px solid #8b9199;
+  /* border: 1px solid #8b9199; */
   color: #8b9199;
   display: inline-block;
   height: 40px;
   margin: 0 10px;
-  padding-top: 7px;
   transition: all 0.4s ease 0s;
   width: 40px;
 }
@@ -83,8 +79,4 @@ footer {
 footer p {
   padding: 20px 10px;
   text-align: center;
-}
-
-footer img {
-  width: 44px;
 }
