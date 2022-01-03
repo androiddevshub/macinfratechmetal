@@ -70,6 +70,17 @@
 
 @media screen and (max-width: 768px) {
   .whyus-main {
-    margin: 55px;
+    margin: 40px;
+  }
+
+  .whyus-title {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .wework-title {
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 50px;
   }
 }

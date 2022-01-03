@@ -1,6 +1,7 @@
 .about-main {
   margin: 100px;
 }
+
 .our-history-title {
   font-weight: bolder;
   font-size: 2em;
@@ -25,4 +26,15 @@
   margin-right: 70px;
   margin-bottom: 100px;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .about-main {
+    margin: 40px;
+  }
+
+  .our-history-title {
+    text-align: center;
+    margin-left: 0px;
+  }
 }

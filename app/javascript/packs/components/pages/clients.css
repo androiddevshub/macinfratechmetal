@@ -30,3 +30,14 @@
 .BaseTable__row-cell-text {
   font-size: 1.3em;
 }
+
+@media screen and (max-width: 768px) {
+  .clients-main {
+    margin: 40px;
+  }
+
+  .clients-title {
+    margin-left: 0px;
+    text-align: center;
+  }
+}

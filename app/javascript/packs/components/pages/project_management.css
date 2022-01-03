@@ -55,5 +55,26 @@
   height: 65vh;
 }
 
-@media screen {
+@media screen and (max-width: 768px) {
+  .pm-main {
+    margin: 40px;
+  }
+
+  .pm-title {
+    text-align: center;
+  }
+
+  .pm-list-main {
+    flex-direction: column;
+  }
+
+  .pm-list-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pm-title {
+    text-align: center;
+    margin-left: 0px;
+  }
 }

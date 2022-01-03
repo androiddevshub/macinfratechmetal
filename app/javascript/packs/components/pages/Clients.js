@@ -80,7 +80,7 @@ export default function Clients() {
       </div>
 
       <div className="clients-table">
-        <BaseTable data={rows} width={1000} height={700}>
+        <BaseTable data={rows} width={100} height={700}>
           <Column
             key="index"
             title="S. No."
