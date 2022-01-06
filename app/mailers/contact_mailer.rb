@@ -2,9 +2,9 @@ class ContactMailer < ApplicationMailer
 
   def send_mail
     @name = params[:name]
-    # @email = email
-    # @phone = phone
-    # @message = message
-    mail(to: 'shubjain440@gmail.com', subject: 'Query subject')
+    @email = params[:email]
+    @phone = params[:phone]
+    @message = params[:message]
+    mail(to: 'enquiry@macinfratechmetal.com', subject: 'Enquiry')
   end
 end

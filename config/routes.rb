@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'welcome#index', as: 'admin'
+  mount Api => "/"
   get "/*path", to: "welcome#index", constraints: ->(request) do
                   !request.xhr?
                 end

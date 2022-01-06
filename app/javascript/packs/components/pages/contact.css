@@ -1,6 +1,7 @@
 .contact-main {
   margin: 100px;
 }
+
 .contact-title {
   font-weight: bolder;
   font-size: 2em;
@@ -43,9 +44,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact-main {
+    margin: 40px;
+  }
+
+  .contact-title {
+    text-align: center;
+    margin-left: 0px;
+  }
+
   .contact-details {
     flex: none;
   }
+
   .div-1 {
     display: flex;
     flex-direction: column;

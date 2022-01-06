@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import {
   Form,
@@ -9,125 +9,159 @@ import {
   Col,
   Row,
 } from "react-bootstrap";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
-import addressIcon from "./../../assets/images/address-logo.png";
 
-export class Contact extends React.Component {
-  render() {
-    const mapStyles = {
-      width: "70%",
-      height: "500px",
+export default function Contact() {
+  const [submitting, setSubmitting] = useState(false);
+
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setFormValues((prevState) => ({
+      ...prevState,
+      [e.target.name]: value,
+    }));
+  };
+
+  function sendContactMail() {
+    setSubmitting(true);
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formValues),
     };
-    return (
-      <div className="contact-main">
-        <div className="contact-title">Contact Us</div>
+    fetch(`${window.location.origin}/api/contacts/send_mail`, requestOptions)
+      .then(async (response) => {
+        console.log(response);
+        if (response.ok) {
+          setFormValues({ name: "", email: "", phone: "", message: "" });
+          setSubmitting(false);
+          alert(
+            "Your query has been sent successfully. We will contact you soon"
+          );
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  }
 
-        {/* <div>
-          <Map
-            google={this.props.google}
-            zoom={15}
-            style={mapStyles}
-            initialCenter={{ lat: 28.6433887, lng: 77.0789728 }}
-          >
-            <Marker position={{ lat: 28.6433887, lng: 77.0789728 }} />
-          </Map>
-        </div> */}
+  console.log("form data", formValues);
 
-        <div className="contact-content">
-          Have any questions? We'd love to hear from you
+  return (
+    <div className="contact-main">
+      <div className="contact-title">Contact Us</div>
+
+      <div className="contact-content">
+        Have any questions? We'd love to hear from you
+      </div>
+
+      <div className="div-1">
+        <div className="contact-form">
+          <Form>
+            <Form.Group className="mb-3">
+              <Form.Control
+                className="single-input-field"
+                type="name"
+                name="name"
+                placeholder="Enter your name"
+                value={formValues.name}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Control
+                className="single-input-field"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formValues.email}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <InputGroup className="mb-2">
+                <InputGroup.Text>+91</InputGroup.Text>
+                <Form.Control
+                  className="single-input-field"
+                  type="number"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  value={formValues.phone}
+                  onChange={handleChange}
+                />
+              </InputGroup>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Control
+                className="single-input-field"
+                as="textarea"
+                name="message"
+                placeholder="Enter your message"
+                rows={3}
+                value={formValues.message}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Button
+              disabled={submitting}
+              onClick={sendContactMail}
+              variant="primary"
+            >
+              {submitting ? "Submitting" : "Submit"}
+            </Button>
+          </Form>
         </div>
+        <div className="contact-details">
+          <div className="address-info-div">
+            <Card className="text-center">
+              <div style={{ alignItems: "center" }}>
+                <img
+                  src="https://img.icons8.com/color/48/000000/link-company-parent.png"
+                  style={{
+                    width: "50px",
+                    marginTop: "20px",
+                    alignContent: "center",
+                  }}
+                ></img>
 
-        <div className="div-1">
-          <div className="contact-form">
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Control
-                  className="single-input-field"
-                  type="name"
-                  placeholder="Enter your name"
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control
-                  className="single-input-field"
-                  type="email"
-                  placeholder="Enter your email"
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicNumber">
-                <InputGroup className="mb-2">
-                  <InputGroup.Text>+91</InputGroup.Text>
-                  <Form.Control
-                    className="single-input-field"
-                    type="number"
-                    placeholder="Enter your phone number"
-                  />
-                </InputGroup>
-              </Form.Group>
-
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              >
-                <Form.Control
-                  className="single-input-field"
-                  as="textarea"
-                  placeholder="Enter your message"
-                  rows={3}
-                />
-              </Form.Group>
-              <Button variant="primary">Submit</Button>
-            </Form>
-          </div>
-          <div className="contact-details">
-            <div className="address-info-div">
-              <Card className="text-center">
-                <div style={{ alignItems: "center" }}>
-                  <img
-                    src="https://img.icons8.com/color/48/000000/link-company-parent.png"
+                <Card.Body>
+                  <Card.Title
                     style={{
-                      width: "50px",
                       marginTop: "20px",
-                      alignContent: "center",
+                      fontSize: "15px",
                     }}
-                  ></img>
-
-                  <Card.Body>
-                    <Card.Title
-                      style={{
-                        marginTop: "20px",
-                        fontSize: "15px",
-                      }}
-                    >
-                      296B GURUNANAK FARM (BARI), P.O. BARA,
-                      <br />
-                      <br />
-                      SITARGANJ, DISTT - U.S. NAGAR, UTTARAKHAND (263148)
-                    </Card.Title>
-                  </Card.Body>
-                  <Card.Body>
-                    <Card.Title
-                      style={{
-                        marginTop: "20px",
-                        fontSize: "15px",
-                      }}
-                    >
-                      GF-10 ORCHID BLUE, NEAR BODH ASHRAM,
-                      <br />
-                      <br />
-                      FIROZABAD, UTTAR PRADESH (283203)
-                    </Card.Title>
-                  </Card.Body>
-                </div>
-              </Card>
-            </div>
+                  >
+                    296B GURUNANAK FARM (BARI), P.O. BARA,
+                    <br />
+                    <br />
+                    SITARGANJ, DISTT - U.S. NAGAR, UTTARAKHAND (263148)
+                  </Card.Title>
+                </Card.Body>
+                <Card.Body>
+                  <Card.Title
+                    style={{
+                      marginTop: "20px",
+                      fontSize: "15px",
+                    }}
+                  >
+                    GF-10 ORCHID BLUE, NEAR BODH ASHRAM,
+                    <br />
+                    <br />
+                    FIROZABAD, UTTAR PRADESH (283203)
+                  </Card.Title>
+                </Card.Body>
+              </div>
+            </Card>
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyDWTzhBdvVuAU-UuC6F2BwmMxv_Dr9pmwg",
-})(Contact);
